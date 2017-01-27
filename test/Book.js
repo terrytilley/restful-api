@@ -80,7 +80,12 @@ describe('******** Books ********', () => {
 
   describe('/GET /api/book/:id', () => {
     it('it should GET a book by the given id', (done) => {
-      let book = new Book({ title: "The Lord of the Rings", author: "J.R.R. Tolkien", year: 1954, pages: 1170 });
+      let book = new Book({ 
+        title: "The Lord of the Rings",
+        author: "J.R.R. Tolkien",
+        year: 1954,
+        pages: 1170
+      });
       book.save((err, book) => {
         chai.request(server)
           .get(`/api/book/${book.id}`)

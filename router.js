@@ -1,4 +1,5 @@
 const AuthenticationController = require('./controllers/Authentication');
+const UserController = require('./controllers/User');
 const BookController = require('./controllers/Book');
 
 const express  = require('express');
@@ -31,6 +32,14 @@ module.exports = function(app) {
 
   authRoutes.post('/forgot-password', AuthenticationController.forgotPassword);
   authRoutes.post('/reset-password/:token', AuthenticationController.verifyToken);
+
+  //= ========================
+  // User Routes
+  //= ========================
+  apiRoutes.use('/user', userRoutes);
+
+  userRoutes.get('/:userId', UserController.viewProfile);
+  userRoutes.put('/:userId/edit', requireAuth, UserController.editProfile);
 
   //= ========================
   // Book Routes
