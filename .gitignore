@@ -1,8 +1,6 @@
 .env
 
-# Created by https://www.gitignore.io/api/ma,macos,node
-
-#!! ERROR: ma is undefined. Use list command to see defined gitignore types !!#
+# Created by https://www.gitignore.io/api/macos,node
 
 ### macOS ###
 *.DS_Store
@@ -79,4 +77,4 @@ jspm_packages
 .yarn-integrity
 
 
-# End of https://www.gitignore.io/api/ma,macos,node
+# End of https://www.gitignore.io/api/macos,node

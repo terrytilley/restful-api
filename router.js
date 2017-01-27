@@ -15,8 +15,8 @@ module.exports = function(app) {
   bookRoutes.post('/', BookController.postBook);
 
   bookRoutes.get('/:id', BookController.getBook);
-  bookRoutes.delete('/:id', BookController.deleteBook);
   bookRoutes.put('/:id', BookController.updateBook);
+  bookRoutes.delete('/:id', BookController.deleteBook);
 
   //= ========================
   // Api Routes
