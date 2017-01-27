@@ -1,15 +1,18 @@
 {
   "name": "restful-api",
+  "author": "Terry Tilley",
   "version": "1.0.0",
   "description": "RESTful API Starter Kit",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "mocha --timeout 10000",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "Terry Tilley",
-  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
   "dependencies": {
     "body-parser": "^1.16.0",
     "cors": "^2.8.1",
@@ -22,5 +25,13 @@
     "chai-http": "^3.0.0",
     "dotenv": "^4.0.0",
     "mocha": "^3.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrytilley/restful-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/terrytilley/restful-api/issues"
+  },
+  "homepage": "https://github.com/terrytilley/restful-api#readme"
 }
