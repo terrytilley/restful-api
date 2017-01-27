@@ -24,7 +24,6 @@ module.exports = function(app) {
   //= ========================
   // Auth Routes
   //= ========================
-
   apiRoutes.use('/auth', authRoutes);
 
   authRoutes.post('/register', AuthenticationController.register);
