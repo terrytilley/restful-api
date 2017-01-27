@@ -1,6 +1,5 @@
 module.exports = {
-  secret: process.env.SECRET,
-
+  secret: 'superSecretPassphrase',
   mongoURI: {
     development: process.env.DB,
     test: process.env.TEST_DB
